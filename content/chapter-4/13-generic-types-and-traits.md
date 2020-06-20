@@ -1,8 +1,12 @@
-# _Generic Types, & Traits_
+---
+title: 'Generic Types & Traits'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Generic adalah cara untuk membuat tipe data menjadi lebih _flexible_, sehingga mudah untuk dipakai, berulang-ulang dan terhindar dari masalah _duplicate_.
 
-## Menghapus duplikasi dengan mengekstraknya menjadi sebuah _function_
+Menghapus duplikasi dengan mengekstraknya menjadi sebuah _function_
 
 Sebelum jauh membahas tentang _generic type_, ada baiknya untuk melihat sebuah studi kasus sederhana yaitu mengurangi _duplication_ dengan merubahnya menjadi _function_ yang dapat dipakai berulang-ulang.
 
@@ -23,7 +27,6 @@ fn main() {
    println!("{}", largest); // 5
 }
 ```
-
 
 _Variable_ _numbers_ di atas adalah tipe data _vector_ yang menampung daftar angka dari 1 sampai 5, kemudian setelahnya ada _mutable variable_ yang akan mengambil isi _index_ pertama dari _variable numbers_, kemudian kita coba mengambil semua _item_ yang ada di _variable numbers_ dengan menggunakan _loop_ dan didalam perulangan tersebut kita menggunakan `if` _statement_ untuk mengecek _item number_, jika lebih besar dari _mutable variable largest_ maka akan dimasukan sebagai nilai baru di _variable largest_.
 
@@ -51,15 +54,13 @@ fn main() {
 }
 ```
 
-
 Setelah refactor dengan mengekstrak sebuah operasi pencarian angka terbesar didalam sebuah koleksi data _number_, sekarang fungsi _largest_ menjadi sangat flexible dan dapat dipakai berkali - kali tanpa perlu menulis ulang kodenya.
 
 Fungsi _largest_ memiliki sebuah parameter yang mana merepresentasikan nilai konkret dari slice `i32` kedalam sebuah _function_.
 
 Pertanyaan yang terjadi selanjutnya adalah bagaimana jika kita ingin menggunakan fungsi tersebut untuk tipe data yang berbeda, nah untuk menjawab hal tersebut perlu untuk memahami _generic types_.
 
-
-### _Generic Data Types_
+_Generic Data Types_
 
 Masih terkait studi kasus sebelumnya dimana ada sebuah _function_ yang bisa mengevaluasi sebuah _integer_ dan kemudian mengembalikan angka yang paling besar yang terdapat pada sebuah koleksi data.
 
@@ -116,15 +117,13 @@ For more information about an error, try `rustc --explain E0369`.
 error: could not compile `rust-by-example`
 ```
 
-
 Loh, kok error?
 
 Pada _capture_ error diatas yang di _mention_ adalah `std::cmp::PartialOrd` yang bisa disebut _trait_. 
 
 Saat ini error state yang terjadi diatas adalah karena fungsi _largest_ tidak bekerja untuk setiap kemungkinan `T` type, karena kita ingin membandingkan tipe data `T` yang terdapat didalam _function_. Untuk perbandingan kita perlu untuk menggunakan `std::cmp::PartialOrd`.
 
-
-### _Generic Type in Struct_
+_Generic Type in Struct_
 
 Tipe umum atau _generic type_ bisa juga digunakan di _struct_, gambarnya seperti contoh dibawah.
 
@@ -142,7 +141,7 @@ fn main() {
 }
 ```
 
-### _In enum definition_
+_In enum definition_
 
 Selain bisa digunakan di `struct`, tipe data _generic_ juga bisa digunakan di _enum_.
 
@@ -153,7 +152,7 @@ enum Result<T, E> {
 }
 ```
 
-### _In Method Definition_
+_In Method Definition_
 
 ```rust
 struct Point<T> {
@@ -175,7 +174,7 @@ fn main() {
 }
 ```
 
-### _Multi Generic Types with Method_
+_Multi Generic Types with Method_
 
 ```rust
 struct Point<T, U> {
@@ -202,7 +201,7 @@ fn main() {
 }
 ```
 
-### _Traits_
+_Traits_
 
 Sebuah _trait_ dapat meminta kepada kompilator Rust untuk bagian dari _functionality type_ dapat di _share_ dengan tipe data lainnya. Kita bisa menggunakan _trait_ untuk _share behaviour_ dengan cara yang abstrak. Juga kita bisa menggunakan _trait_ untuk mengikat spesifikasi dari _generic type _yang bisa untuk setiap tipe data.
 

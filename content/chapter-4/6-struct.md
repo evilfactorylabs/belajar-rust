@@ -1,8 +1,12 @@
-## _Struct_
+---
+title: 'Struct'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 _Struct_ atau pendek kata dari _structure_ biasanya digunakan untuk custom tipe data, _struct_ sedikit mirip tipe data _object_. Dengan menggunakan _struct_ kita bisa menulis kode dengan paradigma **Object Oriented Programing (OOP)**.
 
-### Contoh Tipe Data _Struct_
+Contoh Tipe Data _Struct_
 
 Untuk inisialisasi tipe data struct bisa menggunakan _keyword_ `struct` dan kemudian nama tipe datanya.
 
@@ -31,11 +35,11 @@ fn main() {
 }
 ```
 
-Pada kode diatas terlihat `struct People` di inisialisasi dan kemudian diisi dengan dua tipe data yaitu `String` dan `_signed integer 32 bit_ atau _i32_. Nah kemudian di dalam _function main_ terdapat sebuah variabel yang mereferensi ke `struct People` dan menambahkan nilai berdasarkan tipe data pada `struct People`, dan di akhir baris kode _variable_ `p` telah memiliki tipe data dan nilai dari `struct People` sehingga dapat dibaca dengan menggunakan _dot notation_ untuk mencetak secara spesifik nilai dari `struct` tersebut.
+Pada kode diatas terlihat `struct People` di inisialisasi dan kemudian diisi dengan dua tipe data yaitu `String` dan signed integer 32 bit atau `i32`. Nah kemudian di dalam `function main` terdapat sebuah variabel yang mereferensi ke `struct People` dan menambahkan nilai berdasarkan tipe data pada `struct People`, dan di akhir baris kode variabel `p` telah memiliki tipe data dan nilai dari `struct People` sehingga dapat dibaca dengan menggunakan _dot notation_ untuk mencetak secara spesifik nilai dari `struct` tersebut.
 
-### _Method_
+_Method_
 
-_Method_ secara syntax terlihat mirip seperti _function_, diinisiasi dengan menggunakan _keyword_ **<code>fn</code></strong> dan kemudian di depannya ada nama <em>method</em>. Hal yang membedakan terletak pada konteksnya. <em>Method</em> berada di dalam konteks <strong><code>struct</code></strong>, seperti contoh dibawah ini.
+_Method_ secara syntax terlihat mirip seperti _function_, diinisiasi dengan menggunakan _keyword_ `fn` dan kemudian di depannya ada nama method. Hal yang membedakan terletak pada konteksnya. Method berada di dalam konteks `struct`, seperti contoh dibawah ini.
 
 ```rust
 struct People {
@@ -59,7 +63,7 @@ fn main() {
 }
 ```
 
-### _Method_ dengan lebih dari satu parameter
+_Method_ dengan lebih dari satu parameter
 
 _Syntax_ `Self` pada _method_ akan mereferensi ke `struct People`, atau konteksnya sendiri, sehingga bisa mengakses nilai-nilai yang ada pada _People_.
 

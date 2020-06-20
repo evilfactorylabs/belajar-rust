@@ -1,10 +1,14 @@
-## Perulangan
+---
+title: 'Perulangan'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Dengan baris kode seperti di atas yang terjadi adalah perulangan kode dengan mencetak perintah “again!” berkali-kali tanpa berhenti, atau bisa disebut sebagai _overloop_.
 
-### _Loop_
+_Loop_
 
-Untuk melakukan operasi kode secara berulang salah satunya bisa dengan menggunakan **<code>loop</code></strong>.
+Untuk melakukan operasi kode secara berulang salah satunya bisa dengan menggunakan `loop`.
 
 ```rust
 fn main() {
@@ -17,7 +21,7 @@ fn main() {
 Dengan baris kode seperti di atas yang terjadi adalah perulangan kode dengan mencetak perintah “again!” berkali - kali tanpa berhenti, atau bisa disebut sebagai _overloop_.
 
 
-### _While_
+_While_
 
 Setelah mengenal `loop` selanjutnya adalah `while`, berbeda dengan yang sebelumnya, _while_ akan terus berulang jika kondisinya `true`, jadi kita bisa melakukan operasi yang berulang berdasarkan kondisi yang kita tentukan.
 
@@ -35,7 +39,7 @@ fn main() {
 }
 ```
 
-### _For_
+_For_
 
 Selanjutnya adalah `for` untuk perulangan, berbeda seperti `while`, `for` biasanya digunakan untuk mengulang beberapa koleksi data, seperti dibawah ini. Lebih efektif dibandingkan dengan `while`.
 

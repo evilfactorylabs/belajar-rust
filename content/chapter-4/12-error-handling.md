@@ -1,8 +1,12 @@
-## _Error Handling_
+---
+title: 'Error Handling'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Faktanya _error_ adalah hal yang paling sering kita jumpai dalam proses _development_. Rust berkomitmen untuk membuat _error_ dengan baik dan mudah dibaca, sehingga ketika sesuatu berjalan tidak sesuai ekspektasi dapat diketahui dengan cepat. Untuk itu Rust mengelompokan _error_ dalam dua kategori, yaitu _recoverable_ and _unrecoverable_.
 
-### _Unrecoverable_ _Errors_ dengan menggunakan `panic!`
+_Unrecoverable_ _Errors_ dengan menggunakan `panic!`
 
 Sebuah _error_ yang tidak terjangkau atau tidak _coverable_. Untuk kasus ini Rust punya fungsi bawaan yaitu _panic!_ yang tujuannya untuk mencetak pesan _error_.
 
@@ -22,7 +26,7 @@ thread 'main' panicked at 'panic!!!', src/main.rs:2:5
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
 ```
 
-### _Recoverable_ _Errors_ dengan menggunakan `Result`
+_Recoverable_ _Errors_ dengan menggunakan `Result`
 
 Berbeda dengan _error_ sebelumnya, Rust juga memiliki pesan _error_ yang _recoverable_ sehingga kita bisa buat pemetaan _error_-nya dengan baik.
 

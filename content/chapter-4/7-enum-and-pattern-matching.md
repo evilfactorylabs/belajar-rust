@@ -1,6 +1,10 @@
-## _Enum_ & _Pattern Matching_
+---
+title: 'Enum & Pattern Matching'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
-### _Enum_
+_Enum_
 
 _Enum_ adalah fitur yang disediakan untuk membuat beberapa opsi pilihan berdasarkan varian yang ada. Untuk mendefinisikan _enum_ cukup menggunakan _keyword_ **`enum`** seperti dibawah ini.
 
@@ -19,7 +23,7 @@ let IpV4 = IpAddress::V4;
 
 Untuk penggunaan _enum_ biasanya cocok dipadukan dengan _pattern matching_ atau pola yang cocok jika diterjemahkan ke bahasa indonesia.
 
-### _Pattern Matching_
+_Pattern Matching_
 
 Rust punya _control flow operator_ yang cukup _powerful_, yakni dikenal dengan “match” fitur ini bisa digunakan untuk membaca nilai pada sebuah opsi _enum_ dan mengembalikan nilai yang ada berdasarkan kecocokan, untuk lebih lengkapnya berikut adalah contoh kodenya.
 
