@@ -2,14 +2,11 @@
 
 Tipe data lainnya yang tidak memiliki _ownership_ adalah _slice_, _Slices _memberikan kemudahan untuk mereferensi terhadap urutan data yang berdekatan dalam sebuah koleksi data.  
 
-
 ### _String Slices_
 
 _String slice_ adalah referensi kepada bagian dari _String_, sehingga penggunaan slices menggunakan references syntax seperti ini `&[..]`.
 
-_main.rs_
-
-```
+```rust
 fn main() {
    let name = String::from("Hello Word");
    println!("{}", &name[0..2]); // He
