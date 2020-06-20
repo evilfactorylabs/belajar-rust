@@ -1,4 +1,8 @@
-## Mencoba Rust
+---
+title: 'Mencoba Rust'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Untuk awal perkenalan baiknya mencoba untuk membuat program yang cukup sederhana, misalnya dengan mencetak sebuah teks “Halo Dunia” di antarmuka terminal.
 > Catatan, sebelum lebih jauh **penulis sangat merekomendasikan untuk menggunakan sistem operasi Linux atau Mac OS**.

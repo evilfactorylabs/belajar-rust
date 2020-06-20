@@ -1,4 +1,8 @@
-## Kode Anatomi di Rust
+---
+title: 'Kode Anatomi di Rust'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Setelah menjalankan program “Halo Dunia” selanjutnya adalah melihat secara detail anatomi kode yang sudah kita tuliskan sebelumnya.
 

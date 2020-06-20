@@ -1,7 +1,8 @@
-# CHAPTER III
-
-
-## _Installation_
+---
+title: 'Instalation'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Untuk bisa menggunakan Rust, tentunya perlu untuk menginstalnya terlebih dahulu berikut adalah cara _install_ Rust di beberapa sistem operasi yang populer.
 
