@@ -4,7 +4,7 @@ _Control flow_ adalah cara untuk mengoperasikan kondisi di Rust. Pengkondisian b
 
 ### _If Expressions_
 
-Standarnya **<code>if</code></strong> adalah <em>expression</em>, karena <strong><code>if</code></strong> mengevaluasi dan mengembalikan sebuah nilai berdasarkan <em>statement</em> penentu.
+Standarnya `if` adalah _expression_, karena `if` mengevaluasi dan mengembalikan sebuah nilai berdasarkan _statement_ penentu.
 
 ```rust
 fn main() {
@@ -20,7 +20,7 @@ fn hello(name: &str) {
 
 ### _Multiple Conditions_
 
-Selain **<code>if</code></strong> terdapat juga beberapa kondisi lainnya yakni seperti <strong><code>else if</code></strong> dan <strong><code>else</code></strong>. Hal ini umum sama seperti bahasa yang lainnya.
+Selain `if` terdapat juga beberapa kondisi lainnya yakni seperti `else if` dan `else`. Hal ini umum sama seperti bahasa yang lainnya.
 
 ```rust
 fn main() {
@@ -36,9 +36,9 @@ fn main() {
 }
 ```
 
-### Menggunakan **<code>if</code></strong> di dalam sebuah <strong><code>let</code></strong> <em>statement</em>
+### Menggunakan `if` di dalam sebuah `let` _statement_
 
-Walaupun  **<code>if</code></strong> adalah sebuah <em>expression</em>, tetapi kita masih diperbolehkan untuk menggunakan <strong><code>if</code></strong> di dalam sebuah <em>statement</em>. Dengan syarat tipe data dari <em>statement</em> harus sama, hal ini tujuannya untuk menjaga konsistensi data.
+Walaupun `if` adalah sebuah _expression_, tetapi kita masih diperbolehkan untuk menggunakan `if` di dalam sebuah _statement_. Dengan syarat tipe data dari _statement_ harus sama, hal ini tujuannya untuk menjaga konsistensi data.
 
 ```rust
 fn main() {
