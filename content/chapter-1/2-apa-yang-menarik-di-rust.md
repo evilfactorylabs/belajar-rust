@@ -1,4 +1,8 @@
-## Apa yang menarik di Rust?
+---
+title: 'Apa yang menarik di Rust?'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Tentunya setiap bahasa punya kelebihan dan kekurangan, tidak ada yang sempurna karena kesempurnaan hanya milik Tuhan Yang Maha Kuasa. Setiap Developer, Software Engineer, dan Praktisi lainya pasti punya pertimbangan masing-masing dalam memilih suatu bahasa, banyak faktor yang bisa mempengaruhi keputusan misalnya ketersedian sumber daya belajar, dukungan komunitas, dan bantuan lainnya seperti dukungan pustaka untuk development.
 

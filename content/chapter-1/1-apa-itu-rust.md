@@ -1,4 +1,8 @@
-## Apa itu Rust?
+---
+title: 'Apa itu Rust?'
+metaTitle: 'This is the title tag of this page'
+metaDescription: 'This is the meta description'
+---
 
 Rust merupakan bahasa program yang punya multi paradigma berfokus pada keamanan dan performa, khususnya di keamanan konkurensi. _Memory safety_ di Rust terjadi tanpa mengandalkan _garbage collection_. Oh iya, siapa sih yang pertama kali menginisialisasi proyek Rust? Beliau adalah **Graydon Hoare**, dengan bantuan dari beberapa kontributor lainnya. 
 
