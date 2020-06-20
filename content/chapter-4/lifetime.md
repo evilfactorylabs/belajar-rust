@@ -4,13 +4,9 @@ _Lifetime_ adalah bagian dari fitur _ownership_ yang tersedia di Rust. Sebelumny
 
 Jika bermain dengan _references_ ada hal yang menjadi _problem_ yaitu _dangling references_, masalah ini dikenal dengan referensi yang menggantung, ini terjadi karena ada sebuah nilai yang mereferensi ke sebuah alamat yang tidak valid, di dalam memori. Untuk menangani masalah tersebut Rust menyediakan fitur _lifetime_ yang bisa kita gunakan untuk mengatur ruang lingkup sehingga bisa tetap valid.
 
-
 ### _Dangling References_
 
-_main.rs_
-
-
-```
+```rust
 fn main() {
    let s;
 
@@ -22,11 +18,7 @@ fn main() {
 }
 ```
 
-
-Berikut adalah hasil kompilasinya.
-
-
-```
+```bash
 error[E0597]: `x` does not live long enough
  --> main.rs:6:13
   |
@@ -46,10 +38,7 @@ Kode diatas punya dua ruang lingkup yaitu _global scope_, dan _block scope_, _va
 
 _Lifetime_ dapat dibuat dengan menggunakan _keyword_ `'a` dimana `a` mewakili _lifetime_. Jika di implementasi di dalam sebuah _function_ akan seperti ini.
 
-_main.rs_
-
-
-```
+```rust
 fn main() {
    let first_letter = "Hallo indonesia";
    let second_letter = "hallo";
@@ -58,6 +47,7 @@ fn main() {
   
    println!("{}", longest); // "Hallo indonesia"
 }
+
 fn longest<'a>(first: &'a str, second: &'a str) -> &'a str {
    if first.len() > second.len() {
        first
@@ -67,4 +57,4 @@ fn longest<'a>(first: &'a str, second: &'a str) -> &'a str {
 }
 ```
 
-Terlihat di atas _lifetime_ `'a` mewakili ruang lingkup yang  ada di dalam _function longest_ sehingga _scope_ dari dua parameter di atas akan tetap valid.
+Terlihat di atas _lifetime_ `'a` mewakili ruang lingkup yang ada di dalam _function longest_ sehingga _scope_ dari dua parameter di atas akan tetap _valid_.
