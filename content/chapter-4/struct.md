@@ -4,21 +4,18 @@ _Struct_ atau pendek kata dari _structure_ biasanya digunakan untuk custom tipe 
 
 ### Contoh Tipe Data _Struct_
 
-Untuk inisialisasi tipe data struct bisa menggunakan _keyword_ **<code>struct</code></strong> dan kemudian nama tipe datanya.
+Untuk inisialisasi tipe data struct bisa menggunakan _keyword_ `struct` dan kemudian nama tipe datanya.
 
-
-```
+```rust
 struct People {
 	name: String,
       age: i32,
 }
 ```
 
+Berikut adalah contoh penggunaan `struct`, dengan menyimpan `struct People {}` kedalam sebuah variabel `p`. 
 
-Berikut adalah contoh penggunaan **<code>struct</code></strong>, dengan menyimpan <strong><code>struct People</code></strong> kedalam sebuah variabel <code>p</code>. 
-
-
-```
+```rust
 struct People {
 	name: String,
 	age: i32,
@@ -39,8 +36,7 @@ Pada kode diatas terlihat **<code>struct People</code></strong> di inisialisasi 
 ### _Method_
 _Method_ secara syntax terlihat mirip seperti _function_, diinisiasi dengan menggunakan _keyword_ **<code>fn</code></strong> dan kemudian di depannya ada nama <em>method</em>. Hal yang membedakan terletak pada konteksnya. <em>Method</em> berada di dalam konteks <strong><code>struct</code></strong>, seperti contoh dibawah ini.
 
-_main.rs_
-```
+```rust
 struct People {
    first_name: String,
    last_name: String
@@ -62,14 +58,11 @@ fn main() {
 }
 ```
 
-
-
 ### _Method_ dengan lebih dari satu parameter
 
 Syntax **<code>Self</code></strong> pada <em>method </em>akan mereferensi ke <strong><code>struct People</code></strong>, atau konteksnya sendiri, sehingga bisa mengakses nilai - nilai yang ada pada <em>People</em>.
 
-_main.rs_
-```
+```rust
 impl People {
  fn add_new_identity(&self, other: String) -> String {
    format!("{} {} {}", self.first_name, self.last_name, other)
