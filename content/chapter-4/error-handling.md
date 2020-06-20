@@ -67,7 +67,7 @@ thread 'main' panicked at 'Problem: Os { code: 2, kind: NotFound, message: "No s
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
 ```
 
-Selanjutnya kita akan coba untuk refactor kode sebelumnya dengan mengecek tipe error.
+Selanjutnya kita akan coba untuk _refactor_ kode sebelumnya dengan mengecek tipe _error_.
 
 ```rust
 use std::fs::File;
