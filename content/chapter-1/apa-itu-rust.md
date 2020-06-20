@@ -4,4 +4,5 @@ Rust merupakan bahasa program yang punya multi paradigma berfokus pada keamanan 
 
 Sejarahnya Rust pertama kali di kembangkan di Pusat Riset Mozilla dengan tujuan awalnya untuk penyempurnaan **Servo** yaitu sebuah perangkat _layout_ untuk peramban web dan juga sebagai kompilator Rust. 
 
-Popularitasnya bagaimana?, coba _search_ di mesin pencari ada satu survei yang dilakukan oleh _Stack Overflow_ dan hasilnya Rust termasuk salah satu bahasa yang paling banyak disukai oleh _developer_.
+Popularitasnya bagaimana? Coba _search_ di mesin pencari ada satu survei yang dilakukan oleh _Stack Overflow_ dan hasilnya Rust termasuk salah satu bahasa yang paling banyak disukai oleh _developer_.
+
