@@ -1,9 +1,8 @@
 ## _Variables_ & _Mutability_
 
-Secara _default_ _variabel_ di Rust adalah _immutable_ tidak bisa diubah, Untuk membuat sebuah _variabel_ baru cukup menggunakan _keyword_ **<code>let</code></strong> diawal kemudian nama variabel dan nilainya, contohnya akan seperti ini <strong><code>let name = "hello";</code></strong> dan untuk merubah variabel yang <em>immutable</em> menjadi <em>mutable</em> cukup menambahkan <em>keyword</em> <strong><code>mut</code></strong> setelah <strong><code>let</code></strong> jadinya akan seperti ini <strong><code>let mut name = "hello";</code></strong> berikut kode lengkapnya.
+Secara _default_ variabel di Rust adalah _immutable_ tidak bisa diubah, untuk membuat sebuah variabel baru cukup menggunakan _keyword_ `let` diawal kemudian nama variabel dan nilainya, contohnya akan seperti ini `let name = "hello";` dan untuk merubah variabel yang _immutable_ menjadi _mutable_ cukup menambahkan _keyword_ `mut` setelah `let` jadinya akan seperti ini `let mut name = "hello";` berikut kode lengkapnya.
 
-_main.rs_
-```
+```rust
 fn main() {
    // immutable variable -> variable yang tidak bisa diubah
    let name = "Adiatma";
@@ -19,9 +18,9 @@ fn main() {
 
 ### Perbedaan _Variables_ & _Constants_
 
-Secara default _constant_ itu memiliki sifat _immutable_, sehingga nilainya paten dan tidak bisa diubah. Untuk membuat _variable constant _bisa dengan menggunakan _keyword_ **<code>const</code></strong>.
+Secara default _constant_ itu memiliki sifat _immutable_, sehingga nilainya paten dan tidak bisa diubah. Untuk membuat _variable constant_ bisa dengan menggunakan _keyword_ `const`.
 
-```
+```rust
 const MAX_POINT: i32 = 1000;
 ```
 
@@ -29,10 +28,9 @@ Constant sangatlah umum, dan bukan hal yang baru.
 
 ### _Shadowing_
 
-_Shadow_ berbeda dengan konsep _mutable_, kegunaan fitur ini adalah agar kita bisa memiliki banyak nama _variabel_ yang sama, dan _variable_ selanjutnya disebut sebagai _shadow_ atau bayangan dari variabel sebelumnya. Fitur ini berguna jika ingin menimpa nilai yang ada sebelumnya dengan proses selanjutnya.
+_Shadow_ berbeda dengan konsep _mutable_, kegunaan fitur ini adalah agar kita bisa memiliki banyak nama variabel yang sama, dan _variable_ selanjutnya disebut sebagai _shadow_ atau bayangan dari variabel sebelumnya. Fitur ini berguna jika ingin menimpa nilai yang ada sebelumnya dengan proses selanjutnya.
 
-_main.rs_
-```
+```rust
 fn main() {
    let x = 1;
    let x = x * 2;
@@ -41,6 +39,6 @@ fn main() {
 }
 ```
 
-Contoh di atas terlihat _variabel_ x yang sebelumnya bernilai satu kemudian nilai x yang sebelumnya akan ditimpa dengan nilai baru. Jika disimpulkan perbedaan _shadow_ dengan _mutable variable _adalah terletak di cara pakainya. 
+Contoh di atas terlihat _variabel_ `x` yang sebelumnya bernilai satu kemudian nilai `x` yang sebelumnya akan ditimpa dengan nilai baru. Jika disimpulkan perbedaan _shadow_ dengan _mutable variable_ adalah terletak di cara pakainya. 
 
-_Shadow_ akan menimpa nilai yang lama dengan yang baru, _mutable variable_ untuk menggantikan nilai yang sebelumnya dengan yang baru. Untuk penggunaannya _shadow _butuh untuk dikombinasikan dengan **<code>let</code></strong> sehingga berbeda jika dibandingkan dengan <em>mutable variable</em> yang menimpa nilai baru tanpa menggunakan <strong><code>let.</code></strong>
+_Shadow_ akan menimpa nilai yang lama dengan yang baru, _mutable variable_ untuk menggantikan nilai yang sebelumnya dengan yang baru. Untuk penggunaannya _shadow_ butuh untuk dikombinasikan dengan `let` sehingga berbeda jika dibandingkan dengan _mutable variable_ yang menimpa nilai baru tanpa menggunakan `let`.
