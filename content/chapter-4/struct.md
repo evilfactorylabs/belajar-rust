@@ -31,9 +31,10 @@ fn main() {
 }
 ```
 
-Pada kode diatas terlihat **<code>struct People</code></strong> di inisialisasi dan kemudian diisi dengan dua tipe data yaitu <code>String</code> dan <em>signed integer 32 bit</em> atau <em>i32</em>. Nah kemudian di dalam <em>function</em> <em>main</em> terdapat sebuah variabel yang mereferensi ke <strong><code>struct People</code></strong> dan menambahkan nilai berdasarkan tipe data pada <strong><code>struct People</code></strong>, dan di akhir baris kode variable <code>p</code> telah memiliki tipe data dan nilai dari <strong><code>struct People</code></strong> sehingga dapat dibaca dengan menggunakan <em>dot notation </em>untuk mencetak secara spesifik nilai dari <strong><code>struct</code></strong> tersebut.
+Pada kode diatas terlihat `struct People` di inisialisasi dan kemudian diisi dengan dua tipe data yaitu `String` dan `_signed integer 32 bit_ atau _i32_. Nah kemudian di dalam _function main_ terdapat sebuah variabel yang mereferensi ke `struct People` dan menambahkan nilai berdasarkan tipe data pada `struct People`, dan di akhir baris kode _variable_ `p` telah memiliki tipe data dan nilai dari `struct People` sehingga dapat dibaca dengan menggunakan _dot notation_ untuk mencetak secara spesifik nilai dari `struct` tersebut.
 
 ### _Method_
+
 _Method_ secara syntax terlihat mirip seperti _function_, diinisiasi dengan menggunakan _keyword_ **<code>fn</code></strong> dan kemudian di depannya ada nama <em>method</em>. Hal yang membedakan terletak pada konteksnya. <em>Method</em> berada di dalam konteks <strong><code>struct</code></strong>, seperti contoh dibawah ini.
 
 ```rust
@@ -60,7 +61,7 @@ fn main() {
 
 ### _Method_ dengan lebih dari satu parameter
 
-Syntax **<code>Self</code></strong> pada <em>method </em>akan mereferensi ke <strong><code>struct People</code></strong>, atau konteksnya sendiri, sehingga bisa mengakses nilai - nilai yang ada pada <em>People</em>.
+_Syntax_ `Self` pada _method_ akan mereferensi ke `struct People`, atau konteksnya sendiri, sehingga bisa mengakses nilai-nilai yang ada pada _People_.
 
 ```rust
 impl People {
