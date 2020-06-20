@@ -8,7 +8,7 @@ Rust punya tipe data _collections_, yang merupakan kumpulan atau koleksi data da
 
 ### _Vector_
 
-`Vec&lt;T>` yang dikenal sebagai _vector_, sebuah tipe data yang dapat menyimpan lebih dari satu nilai kedalam _single_ data struktur yang nilainya dapat ditambahkan atau dirubah.
+`Vec<T>` yang dikenal sebagai _vector_, sebuah tipe data yang dapat menyimpan lebih dari satu nilai kedalam _single_ data struktur yang nilainya dapat ditambahkan atau dirubah.
 
 Untuk meng inisiasi vector baru, cukup dituliskan seperti ini `Vec::new().`
 
