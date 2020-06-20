@@ -10,7 +10,7 @@ Rust punya tipe data _collections_, yang merupakan kumpulan atau koleksi data da
 
 `Vec<T>` yang dikenal sebagai _vector_, sebuah tipe data yang dapat menyimpan lebih dari satu nilai kedalam _single_ data struktur yang nilainya dapat ditambahkan atau dirubah.
 
-Untuk meng inisiasi vector baru, cukup dituliskan seperti ini `Vec::new().`
+Untuk menginisiasi _vector_ baru, cukup dituliskan seperti ini `Vec::new()`.
 
 
 ```rust
@@ -19,7 +19,7 @@ fn main() {
 }
 ```
 
-Vector juga dapat diinisiasi dengan standar nilai _default _caranya dengan menggunakan syntax seperti ini `vec![]` berikut adalah contohnya.
+Vector juga dapat diinisiasi dengan standar nilai _default_ caranya dengan menggunakan _syntax_ seperti ini `vec![]` berikut adalah contohnya.
 
 
 ```rust
@@ -29,7 +29,7 @@ fn main() {
 ```
 
 
-Untuk mengupdate dan menambahkan nilai baru, _vector_ punya _method _bawaan yaitu `push.`
+Untuk meng-_update_ dan menambahkan nilai baru, _vector_ punya _method_ bawaan yaitu `push`.
 
 
 ```rust
@@ -39,8 +39,7 @@ fn main() {
 }
 ```
 
-
-Untuk bisa menggunakan `push` tambahkan _keyword_ **<code>mut</code></strong> setelah <em>keyword</em> <strong><code>let</code></strong> tujuannya untuk membuatnya menjadi <em>mutable</em>.
+Untuk bisa menggunakan `push` tambahkan _keyword_ `mut` setelah _keyword_ `let` tujuannya untuk membuatnya menjadi _mutable_.
 
 Cara membaca elemen nilai yang berada didalam sebuah _vector_, bisa dengan menggunakan method `get` seperti ini `numbers.get(index)` berikut adalah contoh detailnya.
 
@@ -80,7 +79,7 @@ fn main() {
 }
 ```
 
-Selain itu bisa juga dengan menggunakan _mutable references._
+Selain itu bisa juga dengan menggunakan _mutable references_.
 
 ```rust
 fn main() {
@@ -96,9 +95,9 @@ fn main() {
 
 ### _String_
 
-Kita dapat menyimpan text _UTF-8 encoded_ ke dalam tipe data _String. _Rust hanya punya satu tipe _string_ yang tersedia di inti bahasanya, yakni `str` yang dikenal dengan _string slice_ yang biasanya terlihat seperti ini `&str` istilahnya _borrowed_ _string_.
+Kita dapat menyimpan text _UTF-8 encoded_ ke dalam tipe data _String_. Rust hanya punya satu tipe _string_ yang tersedia di inti bahasanya, yakni `str` yang dikenal dengan _string slice_ yang biasanya terlihat seperti ini `&str` istilahnya _borrowed string_.
 
-Rust juga memiliki tipe data `String` untuk kemudahan pengolahan data _mutable_ dengan menggunakan _string_. Sehingga bisa menyimpan _encode_ yang berbeda - beda dengan mudah. 
+Rust juga memiliki tipe data `String` untuk kemudahan pengolahan data _mutable_ dengan menggunakan _string_. Sehingga bisa menyimpan _encode_ yang berbeda-beda dengan mudah. 
 
 Untuk penggunaanya sedikit mirip dengan apa yang bisa dilakukan oleh _vector_. Untuk inisiasi cukup dengan cara seperti ini `String::new()` dan untuk konversi tipe data _string literal_ menjadi `String` bisa dengan menggunakan _method_ `to_string()`, seperti contoh dibawah ini.
 
@@ -110,7 +109,7 @@ fn main() {
 }
 ```
 
-Selain itu bisa juga membuat string dengan nilai yang bawaan atau istilahnya _initial content_ contohnya seperti ini.
+Selain itu bisa juga membuat _string_ dengan nilai yang bawaan atau istilahnya _initial content_ contohnya seperti ini.
 
 ```rust
 fn main() {
@@ -119,7 +118,7 @@ fn main() {
 }
 ```
 
-Untuk merubah data atau memperbaharui bisa dengan menambahkan _keyword_ **<code>mut</code></strong> setelah <strong><code>let</code></strong> seperti contoh berikut.
+Untuk merubah data atau memperbaharui bisa dengan menambahkan _keyword_ `mut` setelah `let` seperti contoh berikut.
 
 ```rust
 fn main() {
@@ -159,7 +158,7 @@ fn main() {
 }
 ```
 
-Cara mengakses _value _pada _HashMap _bisa menggunakan _method_ `get` dan _key_ dimasukan sebagai parameter, lengkapnya seperti dibawah ini.
+Cara mengakses _value_ pada _HashMap_ bisa menggunakan _method_ `get` dan _key_ dimasukan sebagai parameter, lengkapnya seperti dibawah ini.
 
 ```rust
 use std::collections::HashMap;
@@ -174,7 +173,7 @@ fn main() {
 }
 ```
 
-Kemudian tahapan selanjutnya dari _HashMap _adalah cara untuk memperbaharui nilai jika _key_ tersebut tidak memiliki nilai.
+Kemudian tahapan selanjutnya dari _HashMap_ adalah cara untuk memperbaharui nilai jika _key_ tersebut tidak memiliki nilai.
 
 ```rust
 use std::collections::HashMap;
