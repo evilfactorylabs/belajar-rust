@@ -143,7 +143,7 @@ fn main() {
 
 Untuk menyimpan koleksi data dengan _key_ yang terasosiasi bisa menggunakan _HashMap_. Syntaxnya seperti ini `HashMap&lt;K, V>` yaitu K mewakili _key_ dan V adalah _value_.
 
-Untuk menggunakan _HashMap_ kita butuh untuk mengambilnya dari _standard library_, bisa dengan menggunakan **<code>use</code></strong> seperti contoh dibawah.
+Untuk menggunakan _HashMap_ kita butuh untuk mengambilnya dari _standard library_, bisa dengan menggunakan `use` seperti contoh dibawah.
 
 ```rust
 use std::collections::HashMap;
