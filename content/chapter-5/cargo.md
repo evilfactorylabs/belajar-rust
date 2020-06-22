@@ -23,7 +23,7 @@ Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan bas
 _Crates_ adalah kumpulan _modules_, dan _function_ yang saling berelasi di dalam sebuah _package_.
 
 
-```
+```bash
 cargo new my-project
 Created binary (application) `my-project` package
 ls my-project
