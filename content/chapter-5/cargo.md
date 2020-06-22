@@ -46,7 +46,7 @@ _Modules_ membuat kita mudah untuk mengorganisasikan sebuah _function_ berdasark
 Oke, untuk selanjutnya kita akan membuat sebuah paket _library_ di Rust, silahkan ketik perintah `cargo new --lib my-lib` yang secara otomatis akan membuat skeleton project yang _support_ untuk menerapkan konsep _library_, dengan _option_ `--lib` file yang di _generate_ dalam direktori `src` adalah `src/lib.rs` berbeda dengan tanpa menggunakan `--lib`.
 
 
-```
+```rust
 // src/lib.rs
 pub mod restaurant {
    pub fn hello(name: String) -> String {
