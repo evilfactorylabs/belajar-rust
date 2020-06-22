@@ -60,7 +60,7 @@ Pada contoh kode diatas terdapat sebuah _module_ restaurant dengan _function_ `h
 Untuk menguji _module_ restaurant tersebut silahkan buat file `main.rs`, di dalam direktori `src/main.rs` isi dengan kode dibawah ini.
 
 
-```
+```rust
 // src/main.rs
 extern crate my_lib;
 
@@ -85,7 +85,7 @@ Ada dua _path_ yang terkenal di Rust, yaitu, **_absolute path_** & **_relative p
 
 Dari kedua _absolute_ dan _relative_ _paths_ diatas selanjutnya untuk mengakses module secara spesifik bisa menggunakan semicolons `(::)` biar lebih `clear` berikut ada contohnya.
 
-```
+```rust
 // src/lib.rs
 pub mod restaurant {
    pub fn hello(name: String) -> String {
@@ -106,7 +106,7 @@ pub fn call_directly() {
 _Keyword_ **_pub_** yang terdapat di awal _module_ dan _function_ bertujuan untuk mengekspos _module_ dan _function_ agar bisa diakses di luar _scope_, karena secara default module dan function di Rust bersifat _private_.
 
 ### Memahami **_use_**
-```
+```rust
 pub mod restaurant {
    pub fn hello(name: String) -> String {
        name
