@@ -3,9 +3,8 @@ title: 'Cargo'
 metaTitle: 'Mengenal Packages, Crates & Modul'
 metaDescription: 'Mengenal Packages, Crates, & Module'
 ---
-## Chapter V - Cargo
 
-### _Mengenal Packages, Crates, & Module_
+_Mengenal Packages, Crates, & Module_
 
 Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan basis kode yang semakin besar, untuk itu Rust punya beberapa konsep yang memungkinkan untuk membuat sebuah komponen yang modular.
 
@@ -18,7 +17,7 @@ Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan bas
 * **_Paths_** adalah sebuah file yang terisolasi untuk mengelompokan _function_ dan _module_. 
 
 
-### _Packages & Crates_
+_Packages & Crates_
 
 _Crates_ adalah kumpulan _modules_, dan _function_ yang saling berelasi di dalam sebuah _package_.
 
@@ -33,11 +32,9 @@ ls my-project/src
 main.rs
 ```
 
-
 Pada contoh diatas perintah `cargo new my-project` akan menghasilkan _package_ `my-project` didalamnya terdapat direktori `src` yang berisi file `src/main.rs` dan file `Cargo.toml`  yang berisi informasi paket pustaka yang kita gunakan, mirip seperti `package.json` jika menggunakan _NodeJS_.
 
-
-### _Modules_
+_Modules_
 
 Setelah membahas tentang _package_ dan _crate_ hal selanjutnya adalah _modules,_ kita akan bahas sedikit tentang bagian - bagian dari sebuah _module_. Hal yang pertama adalah _paths_ yang digunakan untuk mengelompokan sebuah fungsi - fungsi dan module dalam sebuah file. Selanjutnya ada **_use_** yang merupakan _keyword_ untuk memanggil atau membawa sebuah _path_ kedalam _scope_ yang berbeda, dan **_pub keyword_** yang akan membuat sebuah _item_ menjadi publik agar dapat diakses di _scope_ yang berbeda.
 
@@ -72,11 +69,10 @@ fn main() {
 }
 ```
 
-
 Pada kode diatas kode `extern crate my_lib` bertujuan untuk mengambil _module_ yang berada di _paths_ `lib.rs` yang merupakan root component, kemudian ada _keyword_ `use` tujuannya untuk membawa _module_ restaurant yang ada pada _package_ `my_lib`.
 
 
-### _Paths_ untuk mereferensi ke sebuah item di dalam _module_
+_Paths_ untuk mereferensi ke sebuah item di dalam _module_
 
 Ada dua _path_ yang terkenal di Rust, yaitu, **_absolute path_** & **_relative path,_** berikut penjelasannya.
 
@@ -102,10 +98,10 @@ pub fn call_directly() {
 }
 ```
 
-
 _Keyword_ **_pub_** yang terdapat di awal _module_ dan _function_ bertujuan untuk mengekspos _module_ dan _function_ agar bisa diakses di luar _scope_, karena secara default module dan function di Rust bersifat _private_.
 
-### Memahami **_use_**
+Memahami **_use_**
+
 ```rust
 pub mod restaurant {
    pub fn hello(name: String) -> String {
