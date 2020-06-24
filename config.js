@@ -21,7 +21,7 @@ const config = {
     }
   },
   sidebar: {
-    forcedNavOrder: ['/chapter-1', '/chapter-2', '/chapter-3'],
+    forcedNavOrder: ['/chapter-1', '/chapter-2', '/chapter-3', '/chapter-4', '/chapter-5'],
     collapsedNav: [],
     links: [
       { text: 'evilfactorylabs.org', link: 'https://evilfactorylabs.org' },
