@@ -1,13 +1,13 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://handbook.evilfactory.id',
-    gaTrackingId: 'UA-156058188-3'
+    siteUrl: 'https://rust.evilfactory.id',
+    gaTrackingId: ''
   },
   header: {
     logo: '',
-    logoLink: 'https://handbook.evilfactory.id',
-    title: 'evilfactorylabs Handbook',
+    logoLink: 'https://rust.evilfactory.id',
+    title: 'Belajar Rust',
     githubUrl: 'https://github.com/evilfactorylabs/handbook',
     helpUrl: '',
     tweetText: '',
@@ -21,7 +21,7 @@ const config = {
     }
   },
   sidebar: {
-    forcedNavOrder: ['/introduksi', '/evangelist', '/rnd'],
+    forcedNavOrder: ['/chapter-1', '/chapter-2', '/chapter-3', '/chapter-4', '/chapter-5'],
     collapsedNav: [],
     links: [
       { text: 'evilfactorylabs.org', link: 'https://evilfactorylabs.org' },
@@ -36,7 +36,7 @@ const config = {
     ignoreIndex: true
   },
   siteMetadata: {
-    title: 'evilfactorylabs Handbook',
+    title: 'Belajar Rust',
     description: 'yes',
     ogImage: null,
     docsLocation:
@@ -46,8 +46,8 @@ const config = {
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'evilfactorylabs Handbook',
-      short_name: 'evilfactorylabs Handbook',
+      name: 'Belajar Rust',
+      short_name: 'Belajar Rust',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
