@@ -1,12 +1,14 @@
 ---
 title: 'Perulangan'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Perulangan'
+metaDescription: 'Perulangan'
 ---
+
+## Perulangan
 
 Dengan baris kode seperti di atas yang terjadi adalah perulangan kode dengan mencetak perintah “again!” berkali-kali tanpa berhenti, atau bisa disebut sebagai _overloop_.
 
-_Loop_
+## Loop
 
 Untuk melakukan operasi kode secara berulang salah satunya bisa dengan menggunakan `loop`.
 
@@ -21,7 +23,7 @@ fn main() {
 Dengan baris kode seperti di atas yang terjadi adalah perulangan kode dengan mencetak perintah “again!” berkali - kali tanpa berhenti, atau bisa disebut sebagai _overloop_.
 
 
-_While_
+## While
 
 Setelah mengenal `loop` selanjutnya adalah `while`, berbeda dengan yang sebelumnya, _while_ akan terus berulang jika kondisinya `true`, jadi kita bisa melakukan operasi yang berulang berdasarkan kondisi yang kita tentukan.
 
@@ -39,7 +41,7 @@ fn main() {
 }
 ```
 
-_For_
+## For
 
 Selanjutnya adalah `for` untuk perulangan, berbeda seperti `while`, `for` biasanya digunakan untuk mengulang beberapa koleksi data, seperti dibawah ini. Lebih efektif dibandingkan dengan `while`.
 

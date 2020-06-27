@@ -1,8 +1,10 @@
 ---
 title: 'Common Collections'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Common Collections'
+metaDescription: 'Common Collections'
 ---
+
+## Collections
 
 Rust punya tipe data _collections_, yang merupakan kumpulan atau koleksi data dalam berbagai tipe dan nilai. Ada beberapa tipe data _collections_ yang cukup populer di Rust. Berikut adalah beberapa daftarnya.
 
@@ -10,7 +12,7 @@ Rust punya tipe data _collections_, yang merupakan kumpulan atau koleksi data da
 - _Strings_ digunakan untuk menyimpan tipe data _character_.
 - _Hash Map_ memungkinkan kita untuk menyimpan nilai yang terasosiasi dengan _key_ tertentu.
 
-_Vector_
+## Vector
 
 `Vec<T>` yang dikenal sebagai _vector_, sebuah tipe data yang dapat menyimpan lebih dari satu nilai kedalam _single_ data struktur yang nilainya dapat ditambahkan atau dirubah.
 
@@ -97,7 +99,7 @@ fn main() {
 }
 ```
 
-_String_
+## String
 
 Kita dapat menyimpan text _UTF-8 encoded_ ke dalam tipe data _String_. Rust hanya punya satu tipe _string_ yang tersedia di inti bahasanya, yakni `str` yang dikenal dengan _string slice_ yang biasanya terlihat seperti ini `&str` istilahnya _borrowed string_.
 
@@ -143,7 +145,7 @@ fn main() {
 }
 ```
 
-_HashMap_
+## HashMap
 
 Untuk menyimpan koleksi data dengan _key_ yang terasosiasi bisa menggunakan _HashMap_. Syntaxnya seperti ini `HashMap&lt;K, V>` yaitu K mewakili _key_ dan V adalah _value_.
 
