@@ -1,6 +1,9 @@
 ---
 title: 'Chapter 5'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Chapter 5 - Belajar Rust'
+metaDescription: 'Chapter 5 - Belajar Rust'
 ---
 
+## Chapter 5
+
+- [Cargo](./chapter-5/1-cargo)
