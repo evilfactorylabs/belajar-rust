@@ -16,5 +16,3 @@ Untuk lebih lanjut berkontribusi silahkan buat [_issue_](https://github.com/evil
 - [Chapter 1](./chapter-1)
 - [Chapter 2](./chapter-2)
 - [Chapter 3](./chapter-3)
-- [Chapter 4](./chapter-4)
-- [Chapter 5](./chapter-5)

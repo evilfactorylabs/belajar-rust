@@ -4,7 +4,7 @@ metaTitle: 'Mengenal Packages, Crates & Modul'
 metaDescription: 'Mengenal Packages, Crates, & Module'
 ---
 
-_Mengenal Packages, Crates, & Module_
+## Mengenal Packages, Crates, & Module
 
 Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan basis kode yang semakin besar, untuk itu Rust punya beberapa konsep yang memungkinkan untuk membuat sebuah komponen yang modular.
 
@@ -17,7 +17,7 @@ Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan bas
 * **_Paths_** adalah sebuah file yang terisolasi untuk mengelompokkan _function_ dan _module_. 
 
 
-_Packages & Crates_
+## Packages & Crates
 
 _Crates_ adalah kumpulan _modules_, dan _function_ yang saling berelasi di dalam sebuah _package_.
 
@@ -34,7 +34,7 @@ main.rs
 
 Pada contoh diatas perintah `cargo new my-project` akan menghasilkan _package_ `my-project` didalamnya terdapat direktori `src` yang berisi file `src/main.rs` dan file `Cargo.toml` yang berisi informasi paket pustaka yang kita gunakan, mirip seperti `package.json` jika menggunakan _NodeJS_.
 
-_Modules_
+## Modules
 
 Setelah membahas tentang _package_ dan _crate_ hal selanjutnya adalah _modules,_ kita akan bahas sedikit tentang bagian-bagian dari sebuah _module_. Hal yang pertama adalah _paths_ yang digunakan untuk mengelompokkan sebuah fungsi-fungsi dan _module_ dalam sebuah file. Selanjutnya ada **_use_** yang merupakan _keyword_ untuk memanggil atau membawa sebuah _path_ kedalam _scope_ yang berbeda, dan **_pub keyword_** yang akan membuat sebuah _item_ menjadi publik agar dapat diakses di _scope_ yang berbeda.
 
@@ -75,8 +75,8 @@ _Paths_ untuk mereferensi ke sebuah item di dalam _module_
 
 Ada dua _path_ yang terkenal di Rust, yaitu, **_absolute path_** & **_relative path,_** berikut penjelasannya.
 
-*   **_Absolute path_** diawali dengan _keyword crate_ untuk mengambil modul dari _root component_.
-*   **_Relative path_** menggunakan _self_ dan _super_ untuk mengambil dari _current module_.
+-   **_Absolute path_** diawali dengan _keyword crate_ untuk mengambil modul dari _root component_.
+-   **_Relative path_** menggunakan _self_ dan _super_ untuk mengambil dari _current module_.
 
 Dari kedua _absolute_ dan _relative_ _paths_ diatas selanjutnya untuk mengakses _module_ secara spesifik bisa menggunakan _semicolons_ `(::)` biar lebih `clear` berikut ada contohnya.
 
@@ -99,7 +99,7 @@ pub fn call_directly() {
 
 _Keyword_ **_pub_** yang terdapat diawal _module_ dan _function_ bertujuan untuk mengekspos _module_ dan _function_ agar bisa diakses di luar _scope_, karena secara _default module_ dan _function_ di Rust bersifat _private_.
 
-Memahami **_use_**
+## Memahami Penggunaan Use
 
 ```rust
 pub mod restaurant {

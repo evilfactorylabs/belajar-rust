@@ -1,24 +1,26 @@
 ---
 title: 'Ownership'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Ownership'
+metaDescription: 'Ownership'
 ---
+
+## Ownership
 
 Rust punya fitur utama yang dikenal dengan "ownership". Fitur _ownership_ merupakan sistem untuk mengatur alokasi memori di Rust, sehingga penggunaan memori menjadi maksimal. Rust tidak memiliki _garbage collector_. karena Rust kompilator akan mengecek kode kita di _runtime_ saat proses kompilasi kode berlangsung.
 
 Untuk memahami konsep _ownership_ kita perlu paham dulu bagian dari memori yang dikenal dengan _heap_ dan _stack_.
 
-_Heap_ & _Stack_
+## Heap & Stack
 
 _Stack_ dan _heap_ memiliki struktur yang berbeda, _stack_ menyimpan data yang diketahui, biasanya ukurannya harus pasti dan tidak berubah-ubah, sehingga akses data di _stack_ lebih cepat, berbeda dengan _heap_ yang butuh alokasi tempat yang cukup besar di memori karena kepastian datanya bisa berubah-ubah.
 
-_Ownership Rules_
+## Ownership Rules
 
-*   Nilai di Rust memiliki _variable_ _owner_ sendiri atau pemilik data tunggal.
-*   Hanya ada satu _owner_.
-*   _Owner_ hanya akan valid di dalam ruang lingkupnya, jika berada diluar maka tidak akan valid lagi.
+- Nilai di Rust memiliki _variable_ _owner_ sendiri atau pemilik data tunggal.
+- Hanya ada satu _owner_.
+- _Owner_ hanya akan valid di dalam ruang lingkupnya, jika berada diluar maka tidak akan valid lagi.
 
-_References_ & _Borrowing_
+## References & Borrowing
 
 Setelah membahas tentang _ownership_ di Rust, selanjutnya ada bahasan tentang “_References_ & _Borrowing”_ hal ini sangat berkaitan dengan materi _ownership_ atau bisa dibilang bagian dari _ownership_.
 

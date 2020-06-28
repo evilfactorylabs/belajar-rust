@@ -1,12 +1,14 @@
 ---
 title: 'Slices'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Slices'
+metaDescription: 'Slices'
 ---
+
+## Slices
 
 Tipe data lainnya yang tidak memiliki _ownership_ adalah _slice_, _Slices_ memberikan kemudahan untuk mereferensi terhadap urutan data yang berdekatan dalam sebuah koleksi data.  
 
-_String Slices_
+## String Slices
 
 _String slice_ adalah referensi kepada bagian dari _String_, sehingga penggunaan _slices_ menggunakan _references syntax_ seperti ini `&[..]`.
 

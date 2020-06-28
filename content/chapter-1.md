@@ -4,9 +4,8 @@ metaTitle: 'Chapter 1 - Belajar Rust'
 metaDescription: 'Chapter 1 - Belajar Rust'
 ---
 
-## Chapter 1
+Di **Chapter 1** ini adalah edisi _zero_, atau sebuah perkenalan awal sebelum memulai lebih jauh, seperti kata pepatah bahwa "Tak Kenal Maka Tak Sayang" untuk itu perlu untuk berkenalan lebih dulu.
 
-Di chapter ini adalah edisi _zero_, atau sebuah perkenalan awal sebelum memulai lebih jauh, untuk itu berikut adalah daftar konten yang tersedia:
-
-- [Apa itu Rust](./chapter-1/1-apa-itu-rust)
-- [Apa yang menarik di Rust](./chapter-1/2-apa-yang-menarik-di-rust)
+- [Sejarah](./chapter-1/1-sejarah)
+- [Developer Tools](./chapter-1/2-developer-tools)
+- [Getting Started](./chapter-1/3-getting-started)

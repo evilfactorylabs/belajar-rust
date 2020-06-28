@@ -1,8 +1,10 @@
 ---
 title: 'Generic Types & Traits'
-metaTitle: 'This is the title tag of this page'
-metaDescription: 'This is the meta description'
+metaTitle: 'Generic Types & Traits'
+metaDescription: 'Generic Types & Traits'
 ---
+
+## Generic Types & Traits
 
 Generic adalah cara untuk membuat tipe data menjadi lebih _flexible_, sehingga mudah untuk dipakai, berulang-ulang dan terhindar dari masalah _duplicate_.
 
@@ -60,7 +62,7 @@ Fungsi _largest_ memiliki sebuah parameter yang mana merepresentasikan nilai kon
 
 Pertanyaan yang terjadi selanjutnya adalah bagaimana jika kita ingin menggunakan fungsi tersebut untuk tipe data yang berbeda, nah untuk menjawab hal tersebut perlu untuk memahami _generic types_.
 
-_Generic Data Types_
+## Generic Data Types
 
 Masih terkait studi kasus sebelumnya dimana ada sebuah _function_ yang bisa mengevaluasi sebuah _integer_ dan kemudian mengembalikan angka yang paling besar yang terdapat pada sebuah koleksi data.
 
@@ -123,7 +125,7 @@ Pada _capture_ error diatas yang di _mention_ adalah `std::cmp::PartialOrd` yang
 
 Saat ini error state yang terjadi diatas adalah karena fungsi _largest_ tidak bekerja untuk setiap kemungkinan `T` type, karena kita ingin membandingkan tipe data `T` yang terdapat didalam _function_. Untuk perbandingan kita perlu untuk menggunakan `std::cmp::PartialOrd`.
 
-_Generic Type in Struct_
+## Generic Type in Struct
 
 Tipe umum atau _generic type_ bisa juga digunakan di _struct_, gambarnya seperti contoh dibawah.
 
@@ -141,7 +143,7 @@ fn main() {
 }
 ```
 
-_In enum definition_
+## In enum definition
 
 Selain bisa digunakan di `struct`, tipe data _generic_ juga bisa digunakan di _enum_.
 
@@ -152,7 +154,7 @@ enum Result<T, E> {
 }
 ```
 
-_In Method Definition_
+## In Method Definition
 
 ```rust
 struct Point<T> {
@@ -174,7 +176,7 @@ fn main() {
 }
 ```
 
-_Multi Generic Types with Method_
+## Multi Generic Types with Method
 
 ```rust
 struct Point<T, U> {
@@ -201,7 +203,7 @@ fn main() {
 }
 ```
 
-_Traits_
+## Traits
 
 Sebuah _trait_ dapat meminta kepada kompilator Rust untuk bagian dari _functionality type_ dapat di _share_ dengan tipe data lainnya. Kita bisa menggunakan _trait_ untuk _share behaviour_ dengan cara yang abstrak. Juga kita bisa menggunakan _trait_ untuk mengikat spesifikasi dari _generic type _yang bisa untuk setiap tipe data.
 
