@@ -130,7 +130,7 @@ _Tuple_ adalah cara untuk mengelompokkan tipe data tertentu ke dalam satu bentuk
 ```rust
 let tup: (i32, f32, u8) = (500, 6.4, 1); 
 ```
-Seperti contoh di atas, setiap posisi pada _tuple_ memiliki tipe data beragam. Artinya, setiap nilai di dalam _tuple_ tidak harus sama. Untuk mengakses nilai tertentu di dalam sebuah _tuple_ dapat dilakukan dengan cara berikut.
+Seperti contoh di atas, setiap posisi pada _tuple_ memiliki tipe data yang beragam. Artinya, setiap nilai di dalam _tuple_ tidak harus sama. Untuk mengakses nilai tertentu di dalam sebuah _tuple_, dapat dilakukan dengan cara berikut:
 
 ```rust
 fn main() {
