@@ -30,7 +30,9 @@ Secara default _constant_ itu memiliki sifat _immutable_, sehingga nilainya pate
 const MAX_POINT: i32 = 1000;
 ```
 
-Constant sangatlah umum, dan bukan hal yang baru.
+_Constant_ sangatlah umum, dan bukan hal yang baru. _Constant_ merupakan nilai yang terikat dengan sebuah nama dan bersifat mutlak. Adapun yang membedakan antara variabel dengan _constant_ adalah sebagai berikut :
+ - Umumnya _constant_ diawali dengan _keyword_ `const` sedangkan variabel `let`.
+ - Variabel dapat menyimpan nilai dari _function_ atau hasil operasi perhitungan, sedangkan _constant_ hanya berupa nilai tetap.
 
 ## Shadowing
 
