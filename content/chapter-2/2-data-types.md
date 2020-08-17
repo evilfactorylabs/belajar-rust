@@ -158,7 +158,8 @@ _Array_ adalah tipe data koleksi namun berbeda dengan _tuple_, _array_ di Rust s
 ```rust
 let numbers: [i32; 2] = [1, 2];
 ```
-Cara mengakses nilai pada suatu _array_ dapat dilakukan dengan cara berikut.
+Cara mengakses nilai pada suatu _array_ dapat dilakukan dengan cara berikut:
+
 ```rust
 let numbers = [1, 2, 3, 4, 5];
 let second = numbers[1];
