@@ -139,7 +139,8 @@ fn main() {
    println!("Nilai b yaitu {}", b);
 }
 ```
-Selain cara di atas, mengakses nilai di dalam _tuple_ dapat dilakukan secara langsung dengan tanda `.` seperti berikut ini.
+Selain cara di atas, mengakses nilai di dalam _tuple_ dapat dilakukan secara langsung dengan tanda `.` seperti berikut ini:
+
 ```rust
 fn main() {
    let tup: (i32, f32, u8) = (500, 6.4, 1); 
