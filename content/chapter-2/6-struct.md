@@ -64,6 +64,7 @@ fn main() {
    println!("{}", p.get_fullname()) // "Adiatma Kamarudin"
 }
 ```
+_Block_ `impl` pada contoh di atas mendeskripsikan konteks pada `struct`. Kemudian _function_ yang direferensikan ke konteks disisipkan di dalam _block_ `impl`.
 
 ## Method dengan lebih dari satu parameter
 
