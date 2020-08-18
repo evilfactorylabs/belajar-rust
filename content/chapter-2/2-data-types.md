@@ -130,7 +130,7 @@ _Tuple_ adalah cara untuk mengelompokkan tipe data tertentu ke dalam satu bentuk
 ```rust
 let tup: (i32, f32, u8) = (500, 6.4, 1); 
 ```
-Seperti contoh di atas, setiap posisi pada _tuple_ memiliki tipe data beragam. Artinya, setiap nilai di dalam _tuple_ tidak harus sama. Untuk mengakses nilai tertentu di dalam sebuah _tuple_ dapat dilakukan dengan cara berikut.
+Seperti contoh di atas, setiap posisi pada _tuple_ memiliki tipe data yang beragam. Artinya, setiap nilai di dalam _tuple_ tidak harus sama. Untuk mengakses nilai tertentu di dalam sebuah _tuple_, dapat dilakukan dengan cara berikut:
 
 ```rust
 fn main() {
@@ -139,7 +139,8 @@ fn main() {
    println!("Nilai b yaitu {}", b);
 }
 ```
-Selain cara di atas, mengakses nilai di dalam _tuple_ dapat dilakukan secara langsung dengan tanda `.` seperti berikut ini.
+Selain cara di atas, mengakses nilai di dalam _tuple_ dapat dilakukan secara langsung dengan tanda `.` seperti berikut ini:
+
 ```rust
 fn main() {
    let tup: (i32, f32, u8) = (500, 6.4, 1); 
@@ -157,7 +158,8 @@ _Array_ adalah tipe data koleksi namun berbeda dengan _tuple_, _array_ di Rust s
 ```rust
 let numbers: [i32; 2] = [1, 2];
 ```
-Cara mengakses nilai pada suatu _array_ dapat dilakukan dengan cara berikut.
+Cara mengakses nilai pada suatu _array_ dapat dilakukan dengan cara berikut:
+
 ```rust
 let numbers = [1, 2, 3, 4, 5];
 let second = numbers[1];
