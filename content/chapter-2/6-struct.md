@@ -15,7 +15,7 @@ Untuk inisialisasi tipe data struct bisa menggunakan _keyword_ `struct` dan kemu
 ```rust
 struct People {
 	name: String,
-   age: i32,
+    age: i32,
 }
 ```
 
