@@ -6,21 +6,16 @@ metaDescription: 'Mengenal Packages, Crates, & Module'
 
 ## Mengenal Packages, Crates, & Module
 
-Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan basis kode yang semakin besar, untuk itu Rust punya beberapa konsep yang memungkinkan untuk membuat sebuah komponen yang modular.
+Dalam _development_ software tentunya bertambahnya fitur akan seiring dengan bertambahnya jumlah kode, untuk itu Rust punya beberapa konsep yang mungkin untuk membuat sebuah komponen yang modular.
 
 * **_Packages_** adalah paket _skeleton_ _project_ yang siap pakai.
-
 * **_Crates_** adalah _root_ dari beberapa _module_, dan _function_ yang berelasi.
-
 * **_Modules_** & **_use_** untuk mengontrol ruang lingkup dan privasi dari _paths_ atau bagian dari sistem _module_.
-
 * **_Paths_** adalah sebuah file yang terisolasi untuk mengelompokkan _function_ dan _module_. 
-
 
 ## Packages & Crates
 
 _Crates_ adalah kumpulan _modules_, dan _function_ yang saling berelasi di dalam sebuah _package_.
-
 
 ```bash
 cargo new my-project
