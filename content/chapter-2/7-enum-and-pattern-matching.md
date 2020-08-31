@@ -14,8 +14,7 @@ enum IpAddress {
 	V6
 }
 ```
-
-Untuk mengakses nilai _enum_ bisa dengan cara seperti ini.
+Perbedaan yang mendasari antara _enum_ dengan _struct_ yaitu, _enum_ dapat menyimpan data dengan variasi tipe data berbeda. Untuk mengakses nilai _enum_ bisa dengan cara seperti ini.
 
 ```rust
 let IpV4 = IpAddress::V4;

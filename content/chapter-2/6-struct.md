@@ -77,3 +77,26 @@ impl People {
  }
 }
 ```
+## Associated Functions
+
+_Block_ `impl` dapat digunakan tanpa memanfaatkan _syntax_ `self` sebagai parameter _method_. Konsep ini dinamakan _associated functions_. _Associated functions_ merupakan _function_ yang diasosiasikan dengan _struct_ namun bukan merupakan _method struct_. _Associated functions_ digunakan untuk _constructor_ yang akan mengembalikan _instance_ baru dari sebuah _struct_. Adapun contoh implementasi _associated functions_ untuk _struct_ seperti berikut.
+
+```rust
+impl People {
+   fn count_income(d: i32, i: i32) -> People {
+      People {
+         days: d,
+         income: i
+      }
+   }
+}
+
+```
+Untuk memanggil kembali _associated functions_ yang telah dibuat dapat menerapkan _syntax_ `::` seperti `People::count_income(30, 3000)`. Adapun salah satu contoh menampilkan pemanggilan _associated functions_ adalah sebagai berikut.
+
+```rust
+fn main() {
+   let show = People::count_income(30, 3000);
+   println!("{:#?}", show);
+}
+```
